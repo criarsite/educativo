@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Instagram</title>
+     <style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6ble2do_xwmUD8Y6cZ5YeuK6AlnNtlIAnq1p-kfOzVgdf6lx7W_c-BeeSsCutofS5rlGHR0sbj9bvE_bG2G13RqRJLHsrcU9o3wzuGCFz2WQf6Amzab8cuYQBLcOe8xJhGMaNJzkGK30A-M4VPgLHdqnhxBUUfl4buSZlXdmGIHraY7FKw3oTxsza/s1600/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiyhVsG-XDUcm8JOBUOoNyvLau_oNC6K6CJmkH4Y08L9y1ycBFrHqHLpW9unyiyl11ZnPvL96gv0W3yNrvJVu2Nob_KEOml1SSz64uBqMuiSIoLxoNwzx_KgjlXtXHsinztQTXbCBiXvUoamaZ_TTZd97_4QR3pYqicBnukSYIma_Bm0CXb9-_ob3w/s320/googleplay-button.png');
+}
+
+
+.menu-fim{
+    background-color: #fafafa;
+    
+}
+
+
+
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+     </style>
+</head>
+<body>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh73CxsXMItT4F2iUo6QgDkiJnxKP9Wr6dpAO1jq3t7yoRVvZmM-cbhdSHks0cPA4KfaMD2ABJk_xVfaW79sv1R1yBLu3Ji4cK632_Dp04CM-gciCvWH-vdi_vpx9aR6fnOn91GCzzm8Ns4mMCzcEbiKjQ5qRskttKUWcajf6d3EI66gjL3jICYTUdB/s320/instagram-celular.png" alt="celular">
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht9P4zPIc69yHUMWsvhLlhjzOMQYSunS8huAOAdBGoeflP8kLbo9_J4rC3SbfWf4LH5Dy1nXB4OGYU6nqvxIMPbRbXgU3IvaDkOnepAGN1U7rXiDAoSciLmgBjVOZaVdKNJmpRqqbAx4otgEteIZzU0plsOw__I_u9xpHBsKdvovAh49ssvZtBGWVt/s1600/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <div class="profile-photo">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUwqlqfvfMALrS6K6WJcKU-cA2EIyb8Y38XpbAih7O_s9QZUPBf4B9Jl-XxF1KXxKI6j4XRXobXhtBveWlZyihGlYw_zLHyjziC2f0wICi9TBRN4skDFPtgXNHzAeLN4cBF1nNWrTZYajfcT1Sssn9GkQOuhtgu_dJWeT6O3MYfNwQhHWtY67FD2go/s218/criarsitept.jpg" alt="foto de perfil">
+                </div>
+                <a href="#" class="instagram-login">Continue como criarsitept</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é criarsitept?</p>
+                <p class="not-account">
+                    <span class="link-blue">Alternar contas</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
