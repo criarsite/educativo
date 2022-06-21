@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade javascript</title>
+</head>
+
+<body>
+<h1>Atividade com numeros</h1>
+<blockquote>Mais atividades online em <a href="https://devopspt.blogspot.com">www.devopspt.blogspot.com</a> </blockquote>
+    <script>
+        const numero = Number(prompt("digite um numero"))
+        let temp = numero.toString();
+        let num2 = numero * "ola";
+
+        document.body.innerHTML += `Seu numero é <h1>${numero}</h1><br>`;
+        document.body.innerHTML += `A raiz quadrada é ${numero ** 0.5} <br>`;
+        document.body.innerHTML += `${num2} ${Number.isInteger(temp)}<br>`;
+        document.body.innerHTML += `Arredondado para baixo ${Math.floor(numero)}<br>`;
+        document.body.innerHTML += `Arredondaddo para cima ${Math.ceil(numero)}<br>`;
+        document.body.innerHTML += `Com duas casas decimais ${numero.toFixed(2)}<br>`;
+        document.body.innerHTML += `Desenvolvido por  Washington Gomes @criarsite<br>`;
+    </script>
+    <footer>
+    <a href="https://www.linkedin.com/in/criarsite">Programador Web / Mobile</a> 
+    </footer>
+</body>
+
+</html>
